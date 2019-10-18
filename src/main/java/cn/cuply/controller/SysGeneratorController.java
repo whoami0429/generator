@@ -1,17 +1,11 @@
-/**
- * Copyright (c) 2018 人人开源 All rights reserved.
- *
- * https://www.renren.io
- *
- * 版权所有，侵权必究！
- */
 
-package io.renren.controller;
 
-import io.renren.service.SysGeneratorService;
-import io.renren.utils.PageUtils;
-import io.renren.utils.Query;
-import io.renren.utils.R;
+package cn.cuply.controller;
+
+import cn.cuply.service.SysGeneratorService;
+import cn.cuply.utils.PageUtils;
+import cn.cuply.utils.Query;
+import cn.cuply.utils.R;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,8 +19,7 @@ import java.util.Map;
 
 /**
  * 代码生成器
- * 
- * @author Mark sunlightcs@gmail.com
+ *
  */
 @Controller
 @RequestMapping("/sys/generator")
@@ -53,7 +46,7 @@ public class SysGeneratorController {
 		byte[] data = sysGeneratorService.generatorCode(tables.split(","));
 		
 		response.reset();  
-        response.setHeader("Content-Disposition", "attachment; filename=\"renren.zip\"");  
+        response.setHeader("Content-Disposition", "attachment; filename=\"cuply.zip\"");
         response.addHeader("Content-Length", "" + data.length);  
         response.setContentType("application/octet-stream; charset=UTF-8");  
   

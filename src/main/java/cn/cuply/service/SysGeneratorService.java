@@ -1,19 +1,13 @@
-/**
- * Copyright (c) 2018 人人开源 All rights reserved.
- *
- * https://www.renren.io
- *
- * 版权所有，侵权必究！
- */
 
-package io.renren.service;
 
+package cn.cuply.service;
+
+import cn.cuply.dao.GeneratorDao;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
-import io.renren.dao.GeneratorDao;
-import io.renren.utils.GenUtils;
-import io.renren.utils.PageUtils;
-import io.renren.utils.Query;
+import cn.cuply.utils.GenUtils;
+import cn.cuply.utils.PageUtils;
+import cn.cuply.utils.Query;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,8 +19,6 @@ import java.util.zip.ZipOutputStream;
 
 /**
  * 代码生成器
- * 
- * @author Mark sunlightcs@gmail.com
  */
 @Service
 public class SysGeneratorService {

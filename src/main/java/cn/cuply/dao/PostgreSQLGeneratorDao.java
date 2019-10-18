@@ -1,12 +1,11 @@
-package io.renren.dao;
+package cn.cuply.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 
 /**
  * PostgreSQL代码生成器
  *
- * @author Mark sunlightcs@gmail.com
- * @since 2018-07-24
+ * @date 2019-01-05
  */
 @Mapper
 public interface PostgreSQLGeneratorDao extends GeneratorDao {

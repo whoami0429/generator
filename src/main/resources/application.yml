@@ -1,15 +1,15 @@
 server:
-  port: 80
+  port: 8090
 
 # mysql
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     #MySQL配置
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/renren_fast?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    username: renren
-    password: 123456
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.158:3306/cuply-fast?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: dev
+    password: Dev@2019
     #oracle配置
     #    driverClassName: oracle.jdbc.OracleDriver
     #    url: jdbc:oracle:thin:@47.100.206.162:1521:xe
@@ -43,6 +43,6 @@ pagehelper:
 
 
 #指定数据库，可选值有【mysql、oracle、sqlserver、postgresql】
-renren:
+cuply:
   database: mysql
 
