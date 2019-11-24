@@ -87,11 +87,7 @@
         #[[this.$http({]]#
           #[[url: this.$http.adornUrl]]#('/${moduleName}/${pathName}/list'),
           method: 'get',
-          #[[params: this.$http.adornParams({]]#
-            'page': this.pageIndex,
-            'limit': this.pageSize,
-            'key': this.dataForm.key
-          })
+          #[[params: this.$http.adornParams(this.dataForm)
         }).then(({data}) => {
           if (data && data.code === 0) {
             this.dataList = data.page.list
