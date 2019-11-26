@@ -117,7 +117,7 @@
       // 新增 / 修改
       addOrUpdateHandle (data) {
         this.addOrUpdateVisible = true
-        #[[this.$nextTick(() => {]]#
+        this.$nextTick(() => {
           this.$refs.addOrUpdate.init(data)
         })
       },
